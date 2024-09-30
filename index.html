@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MemoNjee - We Are Upgrading!</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MemoNjee - We Are Upgrading</title>
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(135deg, #e0eafc, #cfdef3);
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-      h1 {
-        font-size: 5rem;
-        color: #222;
-        background: linear-gradient(45deg, #ff416c, #ff4b2b);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        animation: glow 1.5s ease-in-out infinite;
-        text-align: center;
-        text-shadow: 0px 0px 15px rgba(255, 64, 108, 0.7),
-          0px 0px 20px rgba(255, 75, 43, 0.5);
-      }
-      @keyframes glow {
-        0% {
-          text-shadow: 0px 0px 15px rgba(255, 64, 108, 0.7),
-            0px 0px 20px rgba(255, 75, 43, 0.5);
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        50% {
-          text-shadow: 0px 0px 30px rgba(255, 64, 108, 1),
-            0px 0px 40px rgba(255, 75, 43, 1);
+        .logo {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
         }
-        100% {
-          text-shadow: 0px 0px 15px rgba(255, 64, 108, 0.7),
-            0px 0px 20px rgba(255, 75, 43, 0.5);
+        h1 {
+            font-size: 8vw;
+            color: #222;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: glow 1.5s ease-in-out infinite;
+            text-align: center;
+            text-shadow: 0px 0px 10px rgba(255, 64, 108, 0.7), 0px 0px 15px rgba(255, 75, 43, 0.5);
+            padding: 0 10px;
         }
-      }
+        @keyframes glow {
+            0% {
+                text-shadow: 0px 0px 10px rgba(255, 64, 108, 0.7), 0px 0px 15px rgba(255, 75, 43, 0.5);
+            }
+            50% {
+                text-shadow: 0px 0px 20px rgba(255, 64, 108, 1), 0px 0px 30px rgba(255, 75, 43, 1);
+            }
+            100% {
+                text-shadow: 0px 0px 10px rgba(255, 64, 108, 0.7), 0px 0px 15px rgba(255, 75, 43, 0.5);
+            }
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 10vw;
+            }
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
+
+    <!-- Logo Section -->
+    <img src="Adobe_Express_20231226_2308310_1.png" alt="MemoNjee Logo" class="logo">
+
+    <!-- Upgrading Text -->
     <h1>We Are Upgrading</h1>
-  </body>
+
+</body>
 </html>
